@@ -147,8 +147,8 @@ button { cursor: pointer; border: none; background: none; }
   width: 876.62px;
   height: 623.38px;
   background: #060606;
-  border-radius: 22.63px;
-  overflow: hidden;
+  border-radius: 0;
+  overflow: visible;
   flex-shrink: 0;
 }
 
@@ -177,9 +177,9 @@ button { cursor: pointer; border: none; background: none; }
 /* Figma exact — Vector 2/3/4/5 from node 2:122 — z-index 7 renders above product group (5) */
 .ncard__light-v2 {
   position: absolute;
-  left: -278.51px;
+  left: -600px;
   top: 565.45px;
-  width: 1068.93px;
+  width: 2076.62px;
   height: 214.68px;
   background: #63A4FA;
   mix-blend-mode: plus-lighter;
@@ -190,9 +190,9 @@ button { cursor: pointer; border: none; background: none; }
 
 .ncard__light-v3 {
   position: absolute;
-  left: -101.8px;
+  left: -600px;
   top: 500px;
-  width: 941.81px;
+  width: 2076.62px;
   height: 280px;
   background: rgba(191, 222, 255, 0.18);
   mix-blend-mode: plus-lighter;
@@ -203,9 +203,9 @@ button { cursor: pointer; border: none; background: none; }
 
 .ncard__light-v4 {
   position: absolute;
-  left: -278.51px;
+  left: -600px;
   top: 565.45px;
-  width: 1052.84px;
+  width: 2076.62px;
   height: 126.07px;
   background: rgba(250, 154, 99, 0.1);
   mix-blend-mode: plus-lighter;
