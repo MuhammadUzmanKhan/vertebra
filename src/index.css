@@ -123,9 +123,9 @@ button { cursor: pointer; border: none; background: none; }
 /* ─── Connector line ──────────────────────────────── */
 .ncard__connector-svg {
   position: absolute;
-  left: 316.8px;
-  top: 384px;
-  width: 199.12px;
+  left: 328.8px;
+  top: 381px;
+  width: 188px;
   height: 49.85px;
   overflow: visible;
   pointer-events: none;
@@ -648,7 +648,7 @@ button { cursor: pointer; border: none; background: none; }
 .ncard__ellipse-dot {
   position: absolute;
   left: 442.71px;
-  top: 134px;
+  top: 143px;
   width: 8.44px;
   height: 8.44px;
   background: #ffffff;
@@ -666,8 +666,8 @@ button { cursor: pointer; border: none; background: none; }
 /* Vector 10 — blue translucent hex between hand and face */
 .ncard__vector10 {
   position: absolute;
-  left: 181px;
-  top: 46px;
+  left: 184px;
+  top: 53px;
   width: 219px;
   height: 53px;
   pointer-events: none;
