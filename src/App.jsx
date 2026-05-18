@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import NeuralCard from './components/NeuralCard'
+import ConstellationBackground from './components/ConstellationBackground'
 
 const CARD_W = 876.62
 const CARD_H = 623.38
@@ -29,7 +30,10 @@ export default function App() {
       alignItems: 'center',
       justifyContent: 'center',
     }}>
+      <ConstellationBackground />
       <div style={{
+        position: 'relative',
+        zIndex: 1,
         transform: `scale(${scale})`,
         transformOrigin: 'center center',
         width: CARD_W,
