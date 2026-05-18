@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { TypeAnimation } from 'react-type-animation'
 
 const MENU_LINKS = [
   { label: 'Home', active: true },
@@ -180,8 +181,6 @@ function Sparkles() {
   )
 }
 
-const TITLE_LINE1 = ['Découvrez', 'le', 'Futur']
-const TITLE_LINE2 = ['des', 'Casques', 'Immersifs']
 
 export default function NeuralCard({ active }) {
   const cardRef = useRef(null)
@@ -211,8 +210,7 @@ export default function NeuralCard({ active }) {
 
     /* Reset */
     card.querySelectorAll('.anim-fade-up, .anim-fade-in').forEach(el => el.classList.remove('visible'))
-    card.querySelectorAll('.ncard__title-word').forEach(w => w.classList.remove('visible'))
-    card.querySelectorAll('.ncard__feature').forEach(f => f.classList.remove('visible'))
+card.querySelectorAll('.ncard__feature').forEach(f => f.classList.remove('visible'))
 
     const go = (sel, delay) => {
       const el = card.querySelector(sel)
@@ -224,11 +222,6 @@ export default function NeuralCard({ active }) {
     go('.ncard__desc',         650)
     go('.ncard__product-group',  360)
     go('.ncard__connector-svg',  360)
-
-    /* Title — word by word */
-    card.querySelectorAll('.ncard__title-word').forEach((w, i) => {
-      setTimeout(() => w.classList.add('visible'), 280 + i * 70)
-    })
 
     /* Feature pills — staggered */
     card.querySelectorAll('.ncard__feature').forEach((f, i) => {
@@ -272,26 +265,21 @@ export default function NeuralCard({ active }) {
             <NCardCorner />
           </div>
           <div className="ncard__texts">
-            {/* Word-by-word title reveal */}
-            <h2 className="ncard__title">
-              <span className="ncard__title-line">
-                {TITLE_LINE1.map((w, i) => (
-                  <span key={i} className="ncard__word-wrap">
-                    <span className="ncard__title-word">
-                      {w}{i < TITLE_LINE1.length - 1 ? ' ' : ''}
-                    </span>
-                  </span>
-                ))}
-              </span>
-              <span className="ncard__title-line">
-                {TITLE_LINE2.map((w, i) => (
-                  <span key={i + 3} className="ncard__word-wrap">
-                    <span className="ncard__title-word">
-                      {w}{i < TITLE_LINE2.length - 1 ? ' ' : ''}
-                    </span>
-                  </span>
-                ))}
-              </span>
+                    <h2 className="ncard__title">
+              <TypeAnimation
+                key={active}
+                sequence={[
+                  'Découvrez le Futur\ndes Casques Immersifs',
+                  2000,
+                  '',
+                  500,
+                ]}
+                speed={60}
+                deletionSpeed={80}
+                repeat={Infinity}
+                style={{ whiteSpace: 'pre-line', display: 'block' }}
+                cursor={true}
+              />
             </h2>
             <p className="ncard__desc anim-fade-up">
               Une technologie pensée pour effacer la frontière entre<br/>
