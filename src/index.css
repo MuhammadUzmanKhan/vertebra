@@ -123,10 +123,10 @@ button { cursor: pointer; border: none; background: none; }
 /* ─── Dashed connector line (Figma Vector 8) ──────── */
 .ncard__connector-svg {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 611.45px;
-  height: 301.98px;
+  left: 200px;
+  top: 388px;
+  width: 322px;
+  height: 58px;
   pointer-events: none;
   z-index: 4;
 }

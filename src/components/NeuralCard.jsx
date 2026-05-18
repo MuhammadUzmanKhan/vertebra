@@ -334,9 +334,6 @@ export default function NeuralCard({ active }) {
         <div className="ncard__sparkle-v9" />
         <div className="ncard__sparkle-v7" />
         <Sparkles />
-        <svg className="ncard__connector-svg" viewBox="0 0 611.45 301.98" fill="none">
-          <line x1="95" y1="80" x2="442.71" y2="105" stroke="rgba(255,255,255,0.5)" strokeWidth="0.8" strokeDasharray="3.5 4.5" strokeLinecap="round"/>
-        </svg>
         <div className="ncard__ellipse-dot" />
 
         {/* Float wrapper + 3D tilt card */}
@@ -364,6 +361,18 @@ export default function NeuralCard({ active }) {
           </div>
         </div>
       </div>
+
+      <svg className="ncard__connector-svg" viewBox="0 0 1172 442" fill="none">
+        <polyline
+          points="72,62 355,328 1130,328"
+          stroke="rgba(255,255,255,0.45)"
+          strokeWidth="6"
+          strokeDasharray="22 20"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+        />
+      </svg>
     </div>
   )
 }
