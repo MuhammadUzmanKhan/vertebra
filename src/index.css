@@ -101,7 +101,7 @@ button { cursor: pointer; border: none; background: none; }
   top: 43.8px;
   width: 182.24px;
   height: 76.22px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(160, 210, 255, 0.18);
   mix-blend-mode: plus-lighter;
   filter: blur(79.1214px);
   pointer-events: none;
@@ -113,7 +113,7 @@ button { cursor: pointer; border: none; background: none; }
   top: 44.6px;
   width: 175.65px;
   height: 75.43px;
-  background: rgba(255,255,255,0.5);
+  background: rgba(180, 220, 255, 0.12);
   mix-blend-mode: plus-lighter;
   filter: blur(21.099px);
   pointer-events: none;
@@ -662,6 +662,9 @@ button { cursor: pointer; border: none; background: none; }
   0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.3); }
   50% { box-shadow: 0 0 0 4px rgba(255,255,255,0); }
 }
+
+
+/* Lens face blue-white fill — matches Figma lit-screen appearance */
 
 /* Vector 10 — blue translucent hex between hand and face */
 .ncard__vector10 {
