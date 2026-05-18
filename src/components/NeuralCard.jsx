@@ -240,13 +240,6 @@ export default function NeuralCard({ active }) {
     <div className="ncard" ref={cardRef}>
       <GridBackground />
 
-      {/* <div className="ncard__light-v2" />
-      <div className="ncard__light-v3" />*/}
-      <div className="ncard__light-v4a" />
-      {/* <div className="ncard__light-v4" />  */}
-      <div className="ncard__light-v5" />
-      {/* <div className="ncard__light-v6" /> */}
-
       {/* Navbar */}
       <nav className="ncard__nav anim-fade-in">
         <div className="ncard__nav-inner">
@@ -369,17 +362,22 @@ export default function NeuralCard({ active }) {
         </div>
       </div>
 
-      <svg className="ncard__connector-svg anim-fade-in" viewBox="0 0 1000 244" fill="none">
-        <polyline
-          points="424,111 533,213 936,213"
+      <svg className="ncard__connector-svg anim-fade-in" viewBox="0 0 200 51" fill="none">
+        <path
+          d="M0.359436 0.386063L53.8983 50.2326H199.482"
           stroke="rgba(255,255,255,0.4)"
-          strokeWidth="3"
-          strokeDasharray="12 10"
+          strokeWidth="1.05495"
+          strokeDasharray="4.22 4.22"
           strokeLinecap="round"
           strokeLinejoin="round"
-          fill="none"
         />
       </svg>
+
+      {/* Atmospheric glow — renders above product group, additive blend */}
+      <div className="ncard__light-v2" />
+      <div className="ncard__light-v3" />
+      <div className="ncard__light-v4" />
+      <div className="ncard__light-v5" />
     </div>
   )
 }
