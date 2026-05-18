@@ -222,7 +222,8 @@ export default function NeuralCard({ active }) {
     go('.ncard__nav',           80)
     go('.ncard__tag',          180)
     go('.ncard__desc',         650)
-    go('.ncard__product-group', 360)
+    go('.ncard__product-group',  360)
+    go('.ncard__connector-svg',  360)
 
     /* Title — word by word */
     card.querySelectorAll('.ncard__title-word').forEach((w, i) => {
@@ -368,7 +369,7 @@ export default function NeuralCard({ active }) {
         </div>
       </div>
 
-      <svg className="ncard__connector-svg" viewBox="0 0 1000 244" fill="none">
+      <svg className="ncard__connector-svg anim-fade-in" viewBox="0 0 1000 244" fill="none">
         <polyline
           points="424,111 533,213 936,213"
           stroke="rgba(255,255,255,0.4)"
