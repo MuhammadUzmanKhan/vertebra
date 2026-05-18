@@ -120,13 +120,13 @@ button { cursor: pointer; border: none; background: none; }
   z-index: 2;
 }
 
-/* ─── Dashed connector line (Figma Vector 8) ──────── */
+/* ─── Connector line ──────────────────────────────── */
 .ncard__connector-svg {
   position: absolute;
-  left: 200px;
-  top: 388px;
-  width: 322px;
-  height: 58px;
+  left: 150px;
+  top: 330px;
+  width: 390px;
+  height: 110px;
   pointer-events: none;
   z-index: 4;
 }
@@ -135,7 +135,7 @@ button { cursor: pointer; border: none; background: none; }
 .ncard__product-float {
   position: absolute;
   left: 445.82px;
-  top: -7px;
+  top: 15px;
   animation: cardFloat 3.8s ease-in-out infinite;
   z-index: 6;
 }
@@ -145,7 +145,7 @@ button { cursor: pointer; border: none; background: none; }
   position: relative;
   width: 876.62px;
   height: 623.38px;
-  background: linear-gradient(to bottom, #000000 0%, #0a0a0f 50%, #000000 100%);
+  background: #060606;
   border-radius: 0;
   overflow: hidden;
   flex-shrink: 0;
@@ -174,67 +174,71 @@ button { cursor: pointer; border: none; background: none; }
 }
 
 /* Figma exact positions from node 2:122 — overflow:hidden on .ncard clips blur at card boundary */
+/* deep blue ambient wash */
 .ncard__light-v2 {
   position: absolute;
-  left: -101.8px;
-  top: 244.22px;
-  width: 942.07px;
-  height: 591.83px;
-  background: rgba(191,222,255,0.04);
-  mix-blend-mode: plus-lighter;
-  filter: blur(316.486px);
+  left: -180px;
+  top: 350px;
+  width: 750px;
+  height: 500px;
+  background: radial-gradient(ellipse at 18% 92%, rgba(0,60,180,0.40) 0%, transparent 60%);
   pointer-events: none;
   z-index: 1;
 }
 
+/* primary vivid cyan bloom — hotspot just outside bottom-left corner */
 .ncard__light-v3 {
   position: absolute;
-  left: -101.8px;
-  top: 447.1px;
-  width: 941.81px;
-  height: 333.03px;
-  background: rgba(191,222,255,0.07);
-  mix-blend-mode: plus-lighter;
-  filter: blur(42.198px);
+  left: -220px;
+  top: 360px;
+  width: 700px;
+  height: 580px;
+  background: radial-gradient(ellipse at 20% 92%, rgba(0,220,255,0.95) 0%, rgba(0,190,250,0.65) 20%, rgba(0,140,230,0.30) 45%, transparent 68%);
+  filter: blur(55px);
   pointer-events: none;
   z-index: 1;
 }
 
+/* orange — disabled */
 .ncard__light-v4a {
-  position: absolute;
-  left: -278.51px;
-  top: 565.45px;
-  width: 1052.84px;
-  height: 126.07px;
-  background: rgba(250,154,99,0.1);
-  mix-blend-mode: plus-lighter;
-  filter: blur(158.243px);
-  pointer-events: none;
-  z-index: 1;
+  display: none;
 }
 
+/* navy right-side counter-glow */
 .ncard__light-v4 {
   position: absolute;
-  left: -278.51px;
-  top: 565.45px;
-  width: 1068.93px;
-  height: 214.68px;
-  background: rgba(99,164,250,0.07);
-  mix-blend-mode: plus-lighter;
-  filter: blur(105.495px);
+  left: 350px;
+  top: 420px;
+  width: 650px;
+  height: 350px;
+  background: radial-gradient(ellipse at 75% 90%, rgba(10,30,140,0.18) 0%, transparent 65%);
+  filter: blur(90px);
   pointer-events: none;
   z-index: 1;
 }
 
+/* ultra-bright tight teal core — neon hotspot */
 .ncard__light-v5 {
   position: absolute;
-  left: -92.44px;
-  top: 462.6px;
-  width: 602.91px;
-  height: 258.73px;
-  background: rgba(99,192,250,0.05);
-  mix-blend-mode: plus-lighter;
-  filter: blur(10.5495px);
+  left: -80px;
+  top: 470px;
+  width: 380px;
+  height: 260px;
+  background: radial-gradient(ellipse at 12% 96%, rgba(80,245,255,1.0) 0%, rgba(0,230,255,0.70) 22%, rgba(0,200,255,0.30) 45%, transparent 65%);
+  filter: blur(14px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* extra wide soft halo to match Figma's large ambient spread */
+.ncard__light-v6 {
+  position: absolute;
+  left: -350px;
+  top: 200px;
+  width: 900px;
+  height: 700px;
+  background: radial-gradient(ellipse at 25% 85%, rgba(0,160,220,0.22) 0%, transparent 55%);
+  filter: blur(120px);
   pointer-events: none;
   z-index: 1;
 }
@@ -358,7 +362,7 @@ button { cursor: pointer; border: none; background: none; }
 .ncard__heading-wrap {
   position: absolute;
   left: 173.75px;
-  top: 81.76px;
+  top: 81px;
   width: 527.48px;
   display: flex;
   flex-direction: column;
@@ -660,7 +664,7 @@ button { cursor: pointer; border: none; background: none; }
 .ncard__ellipse-dot {
   position: absolute;
   left: 442.71px;
-  top: 104px;
+  top: 134px;
   width: 8.44px;
   height: 8.44px;
   background: #ffffff;
@@ -673,6 +677,17 @@ button { cursor: pointer; border: none; background: none; }
 @keyframes dotPulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.3); }
   50% { box-shadow: 0 0 0 4px rgba(255,255,255,0); }
+}
+
+/* Vector 10 — blue translucent hex between hand and face */
+.ncard__vector10 {
+  position: absolute;
+  left: 181px;
+  top: 56px;
+  width: 176px;
+  height: 53px;
+  pointer-events: none;
+  z-index: 6;
 }
 
 /* Sparkles overlay — positioned relative to ncard__product-group */

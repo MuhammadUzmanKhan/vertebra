@@ -23,7 +23,7 @@ export default function App() {
       position: 'fixed',
       inset: 0,
       overflow: 'hidden',
-      background: '#000000',
+      background: '#060606',
       display: 'flex',
       alignItems: 'flex-start',
       justifyContent: 'center',
