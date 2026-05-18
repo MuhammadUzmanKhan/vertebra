@@ -101,7 +101,7 @@ button { cursor: pointer; border: none; background: none; }
   top: 43.8px;
   width: 182.24px;
   height: 76.22px;
-  background: rgba(160, 210, 255, 0.18);
+  background: rgba(255, 255, 255, 0.5);
   mix-blend-mode: plus-lighter;
   filter: blur(79.1214px);
   pointer-events: none;
@@ -113,7 +113,7 @@ button { cursor: pointer; border: none; background: none; }
   top: 44.6px;
   width: 175.65px;
   height: 75.43px;
-  background: rgba(180, 220, 255, 0.12);
+  background: rgba(255, 255, 255, 0.25);
   mix-blend-mode: plus-lighter;
   filter: blur(21.099px);
   pointer-events: none;
@@ -669,10 +669,11 @@ button { cursor: pointer; border: none; background: none; }
 /* Vector 10 — blue translucent hex between hand and face */
 .ncard__vector10 {
   position: absolute;
-  left: 184px;
-  top: 53px;
-  width: 219px;
-  height: 53px;
+  left: 183.14px;
+  top: 57.25px;
+  width: 230px;
+  height: 52.22px;
+  mix-blend-mode: plus-lighter;
   pointer-events: none;
   z-index: 6;
 }

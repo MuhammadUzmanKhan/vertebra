@@ -316,14 +316,13 @@ card.querySelectorAll('.ncard__feature').forEach(f => f.classList.remove('visibl
         <img src="/images/neural-bg.png" alt="" className="ncard__product-bg" />
         <div className="ncard__headset-glow" />
         <div className="ncard__hand-glow" />
-        <div className="ncard__sparkle-v9" />
-        <div className="ncard__sparkle-v7" />
+        <div className="ncard__sparkle-v9" style={{background: 'rgba(255,255,255,0.5)'}} />
         <Sparkles />
         <div className="ncard__ellipse-dot" />
 
         {/* Vector 10 — blue translucent hex shape between hand and face */}
         <svg className="ncard__vector10" viewBox="0 0 176 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M164.045 0L0 24.4668L9.75831 46.3773L166.155 52.2201L175.65 24.4668L164.045 0Z" fill="#63A4FA" fillOpacity="0.25"/>
+          <path d="M164.045 0L0 24.4668L9.75831 46.3773L166.155 52.2201L175.65 24.4668L164.045 0Z" fill="rgba(99,164,250,0.25)" stroke="#000000" strokeWidth="1"/>
         </svg>
 
         {/* Float wrapper + 3D tilt card */}
