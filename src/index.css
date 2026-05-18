@@ -101,7 +101,7 @@ button { cursor: pointer; border: none; background: none; }
   top: 43.8px;
   width: 182.24px;
   height: 76.22px;
-  background: rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.8);
   mix-blend-mode: plus-lighter;
   filter: blur(79.1214px);
   pointer-events: none;
@@ -124,7 +124,7 @@ button { cursor: pointer; border: none; background: none; }
 .ncard__connector-svg {
   position: absolute;
   left: 316.8px;
-  top: 372px;
+  top: 384px;
   width: 199.12px;
   height: 49.85px;
   overflow: visible;
@@ -174,58 +174,59 @@ button { cursor: pointer; border: none; background: none; }
   z-index: 1;
 }
 
-/* Figma exact — Vector 2/3/4/5 from node 2:122 — z-index 7 renders above product group (5) */
+/* Lights render BEHIND product-group (z-index 5) so person blocks them */
 .ncard__light-v2 {
   position: absolute;
-  left: -600px;
+  left: -278.51px;
   top: 565.45px;
-  width: 2076.62px;
+  width: 1068.93px;
   height: 214.68px;
   background: #63A4FA;
   mix-blend-mode: plus-lighter;
   filter: blur(105.495px);
   pointer-events: none;
-  z-index: 7;
+  z-index: 4;
 }
 
 .ncard__light-v3 {
   position: absolute;
-  left: -600px;
-  top: 500px;
-  width: 2076.62px;
-  height: 280px;
-  background: rgba(191, 222, 255, 0.18);
+  left: -101.8px;
+  top: 447.1px;
+  width: 941.81px;
+  height: 333.03px;
+  background: rgba(191, 222, 255, 0.55);
   mix-blend-mode: plus-lighter;
   filter: blur(42.1981px);
   pointer-events: none;
-  z-index: 7;
+  z-index: 4;
 }
 
 .ncard__light-v4 {
   position: absolute;
-  left: -600px;
+  left: -278.51px;
   top: 565.45px;
-  width: 2076.62px;
+  width: 1052.84px;
   height: 126.07px;
   background: rgba(250, 154, 99, 0.1);
   mix-blend-mode: plus-lighter;
   filter: blur(158.243px);
   pointer-events: none;
-  z-index: 7;
+  z-index: 4;
 }
 
 .ncard__light-v5 {
   position: absolute;
   left: -92.44px;
-  top: 520px;
+  top: 462.6px;
   width: 602.91px;
-  height: 200px;
-  background: rgba(99, 192, 250, 0.2);
+  height: 258.73px;
+  background: rgba(99, 192, 250, 0.22);
   mix-blend-mode: plus-lighter;
   filter: blur(10.5495px);
   pointer-events: none;
-  z-index: 7;
+  z-index: 4;
 }
+
 
 /* Navbar */
 .ncard__nav {
@@ -500,6 +501,7 @@ button { cursor: pointer; border: none; background: none; }
   width: 611.45px;
   height: 301.98px;
   z-index: 5;
+  overflow: visible;
 }
 
 .ncard__product-bg {
