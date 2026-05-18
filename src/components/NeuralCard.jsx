@@ -326,6 +326,8 @@ export default function NeuralCard({ active }) {
       {/* Product group */}
       <div className="ncard__product-group anim-fade-in">
         <img src="/images/neural-bg.png" alt="" className="ncard__product-bg" />
+        <div className="ncard__headset-glow" />
+        <div className="ncard__hand-glow" />
         <div className="ncard__sparkle-v9" />
         <div className="ncard__sparkle-v7" />
         <Sparkles />
