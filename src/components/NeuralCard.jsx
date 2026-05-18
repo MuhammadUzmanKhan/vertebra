@@ -240,12 +240,12 @@ export default function NeuralCard({ active }) {
     <div className="ncard" ref={cardRef}>
       <GridBackground />
 
-      <div className="ncard__light-v2" />
-      <div className="ncard__light-v3" />
+      {/* <div className="ncard__light-v2" />
+      <div className="ncard__light-v3" />*/}
       <div className="ncard__light-v4a" />
-      <div className="ncard__light-v4" />
+      {/* <div className="ncard__light-v4" />  */}
       <div className="ncard__light-v5" />
-      <div className="ncard__light-v6" />
+      {/* <div className="ncard__light-v6" /> */}
 
       {/* Navbar */}
       <nav className="ncard__nav anim-fade-in">

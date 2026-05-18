@@ -15,7 +15,7 @@ button { cursor: pointer; border: none; background: none; }
 }
 
 .slide--neural {
-  background: #030303;
+  background: #000000;
 }
 
 /* ─── Card Scale Wrapper ─────────────────────────── */
@@ -145,7 +145,7 @@ button { cursor: pointer; border: none; background: none; }
   position: relative;
   width: 876.62px;
   height: 623.38px;
-  background: #060606;
+  background: #000000;
   border-radius: 0;
   overflow: hidden;
   flex-shrink: 0;
@@ -179,22 +179,22 @@ button { cursor: pointer; border: none; background: none; }
   position: absolute;
   left: -180px;
   top: 350px;
-  width: 750px;
+  width: 1100px;
   height: 500px;
-  background: radial-gradient(ellipse at 18% 92%, rgba(0,60,180,0.40) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 92%, rgba(0,40,160,0.55) 0%, transparent 60%);
   pointer-events: none;
   z-index: 1;
 }
 
-/* primary vivid cyan bloom — hotspot just outside bottom-left corner */
+/* primary vivid blue bloom — hotspot just outside bottom-left corner */
 .ncard__light-v3 {
   position: absolute;
   left: -220px;
   top: 360px;
   width: 700px;
   height: 580px;
-  background: radial-gradient(ellipse at 20% 92%, rgba(0,220,255,0.95) 0%, rgba(0,190,250,0.65) 20%, rgba(0,140,230,0.30) 45%, transparent 68%);
-  filter: blur(55px);
+  background: radial-gradient(ellipse at 20% 92%, rgba(0,140,255,0.95) 0%, rgba(0,100,240,0.65) 20%, rgba(0,70,200,0.28) 45%, transparent 68%);
+  filter: blur(50px);
   pointer-events: none;
   z-index: 1;
 }
@@ -217,14 +217,16 @@ button { cursor: pointer; border: none; background: none; }
   z-index: 1;
 }
 
-/* ultra-bright tight teal core — neon hotspot */
+/* ultra-bright tight blue core — neon hotspot */
 .ncard__light-v5 {
   position: absolute;
-  left: -80px;
-  top: 470px;
-  width: 380px;
-  height: 260px;
-  background: radial-gradient(ellipse at 12% 96%, rgba(80,245,255,1.0) 0%, rgba(0,230,255,0.70) 22%, rgba(0,200,255,0.30) 45%, transparent 65%);
+  left: -13px;
+  top: 285px;
+  width: 900px;
+  height: 340px;
+  /* background-color: #BFDEFF; */
+  /* background: radial-gradient(ellipse at 50% 64%, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.75) 22%, rgba(255, 255, 255, 0.912) 45%, transparent 65%); */
+  background: radial-gradient(ellipse at 8% 88%, rgb(255, 255, 255) 0%, rgba(120, 173, 203, 0.4) 30%, rgba(99, 164, 217, 0.15) 45%, transparent 70%);
   filter: blur(14px);
   pointer-events: none;
   z-index: 1;
@@ -237,7 +239,7 @@ button { cursor: pointer; border: none; background: none; }
   top: 200px;
   width: 900px;
   height: 700px;
-  background: radial-gradient(ellipse at 25% 85%, rgba(0,160,220,0.22) 0%, transparent 55%);
+  background: radial-gradient(ellipse at 25% 85%, rgba(0,90,200,0.20) 0%, transparent 55%);
   filter: blur(120px);
   pointer-events: none;
   z-index: 1;
