@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { useIsDesktop } from '../hooks/useIsDesktop'
 
 const CONFIG = {
   particleCount: 100,
@@ -24,11 +25,13 @@ function createParticle(w, h) {
 }
 
 export default function ConstellationBackground() {
+  const isDesktop = useIsDesktop()
   const canvasRef = useRef(null)
   const mouse = useRef({ x: -9999, y: -9999 })
   const rafRef = useRef(null)
 
   useEffect(() => {
+    if (!isDesktop) return
     const canvas = canvasRef.current
     const ctx = canvas.getContext('2d')
     let particles = []
@@ -127,6 +130,8 @@ export default function ConstellationBackground() {
       window.removeEventListener('mouseleave', onLeave)
     }
   }, [])
+
+  if (!isDesktop) return null
 
   return (
     <canvas
